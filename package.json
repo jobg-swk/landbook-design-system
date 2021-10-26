@@ -16,7 +16,9 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006 -c .storybook",
+    "stort:staticStorybook": "start-storybook -p 6006 -c .storybook -s ./dist/storybook",
     "build": "rimraf ./dist && rollup -c rollup.config.ts && npm run build:types",
+    "build:storybook": "build-storybook  -o ./dist/storybook",
     "build:types": "tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
