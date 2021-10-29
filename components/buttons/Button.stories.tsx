@@ -19,12 +19,18 @@ const meta: Meta = {
 
 export default meta;
 
+/**
+ * 기본버튼
+ */
 export const DefaultButton: Story<ButtonProps> = props => (
   <Button style={{ width: 200, height: 50 }} {...props}>
     Button
   </Button>
 );
 
+/**
+ * PrimaryButton
+ */
 export const PrimaryButton: Story<ButtonProps> = props => (
   <Button style={{ width: 200, height: 50 }} {...props} primary>
     Button
