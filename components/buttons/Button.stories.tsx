@@ -14,6 +14,10 @@ const meta: Meta = {
       defaultValue: false,
       control: { type: 'boolean' },
     },
+    fullWidth: {
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
   },
 };
 
@@ -24,15 +28,6 @@ export default meta;
  */
 export const DefaultButton: Story<ButtonProps> = props => (
   <Button style={{ width: 200, height: 50 }} {...props}>
-    Button
-  </Button>
-);
-
-/**
- * PrimaryButton
- */
-export const PrimaryButton: Story<ButtonProps> = props => (
-  <Button style={{ width: 200, height: 50 }} {...props} primary>
     Button
   </Button>
 );

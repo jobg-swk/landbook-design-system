@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes } from "react";
-import styled, { css } from "styled-components";
+import { ButtonHTMLAttributes } from 'react';
+import styled, { css } from 'styled-components';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
@@ -45,13 +45,13 @@ const Button = styled.button<ButtonProps>`
     color: #bcc4cc;
   }
 
-  ${(props) =>
+  ${props =>
     props.fullWidth &&
     css`
-      width: 100%;
+      width: 100% !important;
     `}
 
-  ${(props) =>
+  ${props =>
     props.primary &&
     css`
       color: #ffffff;
